@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_16"
+    android:paddingTop="@dimen/dimen_8"
+    android:paddingBottom="@dimen/dimen_8"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="@dimen/dimen_8">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardPreventCornerOverlap="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtMedia"
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhiteTransparent"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_8"
+                android:text="Media"
+                android:textColor="@color/textPrimary" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorWhiteTransparent"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingStart="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_8"
+                android:paddingEnd="@dimen/dimen_16"
+                android:paddingBottom="@dimen/dimen_8"
+                android:text="Title"
+                android:textColor="@color/textPrimary" />
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
